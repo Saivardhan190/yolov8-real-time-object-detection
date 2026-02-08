@@ -1,4 +1,4 @@
-🚀 Real-Time Object Detection Web Application using YOLOv8
+# 🚀 Real-Time Object Detection Web Application using YOLOv8
 📌 Project Overview
 
 This project is a real-time object detection system built using YOLOv8 (You Only Look Once), a state-of-the-art deep learning model for object detection developed by Ultralytics.
@@ -7,11 +7,11 @@ The application allows users to upload images through a web interface and automa
 
 This project demonstrates end-to-end machine learning engineering, including model inference, dependency management, cloud deployment, and troubleshooting real-world deployment issues.
 
-🌐 Live Demo
+# 🌐 Live Demo
+  https://yolov8-real-time-object-detection-ghytfmpxr4kkk2qypagjut.streamlit.app/
 
-👉 Live Streamlit App
 
-🎯 Problem Statement
+# 🎯 Problem Statement
 
 Object detection is a core computer vision task used in applications such as:
 
@@ -27,11 +27,11 @@ Smart cities
 
 The challenge is to detect multiple objects in a single image accurately and efficiently, while keeping inference time low enough for real-time usage.
 
-🧠 Solution Approach
+# 🧠 Solution Approach
 
 This project solves the problem using YOLOv8, a single-stage object detection model that performs object localization and classification in a single forward pass of a neural network.
 
-Why YOLOv8?
+## Why YOLOv8?
 
 High accuracy with low latency
 
@@ -41,11 +41,11 @@ Industry adoption and active maintenance
 
 Easy integration with Python applications
 
-⚙️ How YOLOv8 Works (High-Level)
+## ⚙️ How YOLOv8 Works (High-Level)
 
 The input image is passed through a Convolutional Neural Network (CNN) backbone.
 
-The model predicts:
+## The model predicts:
 
 Bounding box coordinates
 
@@ -59,7 +59,7 @@ Final detections are rendered as bounding boxes with class labels.
 
 YOLOv8 processes the entire image in one pass, enabling real-time performance.
 
-🏗️ Project Architecture
+## 🏗️ Project Architecture
 yolov8-real-time-object-detection/
 │
 ├── app.py                  # Streamlit web application
@@ -68,7 +68,7 @@ yolov8-real-time-object-detection/
 ├── README.md               # Project documentation
 └── runs/                   # YOLO output directory (auto-generated)
 
-✨ Key Features
+# ✨ Key Features
 
 🔍 Object detection using YOLOv8
 
@@ -82,14 +82,16 @@ yolov8-real-time-object-detection/
 
 🚀 Cloud-ready deployment
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
 Technology	Purpose
 Python	Core programming language
 YOLOv8 (Ultralytics)	Object detection model
 PyTorch	Deep learning framework
 OpenCV	Image processing
 Streamlit	Web application framework
-▶️ Running the Project Locally
+
+
+# ▶️ Running the Project Locally
 1️⃣ Clone the repository
 git clone https://github.com/Saivardhan190/yolov8-real-time-object-detection.git
 cd yolov8-real-time-object-detection
@@ -108,13 +110,13 @@ http://localhost:8501
 4️⃣ Run YOLO via command line (optional)
 yolo predict model=yolov8n.pt source=0
 
-📂 Output Results
+## 📂 Output Results
 
 Detected images with bounding boxes are automatically saved to:
 
 runs/detect/predict/
 
-☁️ Deployment Details
+## ☁️ Deployment Details
 
 The application is deployed on Streamlit Cloud.
 
@@ -132,11 +134,11 @@ Cleared Streamlit cache to rebuild clean environments
 
 This reflects real-world ML deployment problem-solving, not just model development.
 
-📸 Sample Output
+## 📸 Sample Output
 
 Add screenshots or a GIF here showing detected objects with bounding boxes.
 
-🔮 Future Enhancements
+##🔮 Future Enhancements
 
 Train YOLOv8 on a custom dataset
 
@@ -148,6 +150,6 @@ Improve inference speed with model optimization
 
 Add class-selection filters in UI
 
-📄 License
+##📄 License
 
 MIT License
