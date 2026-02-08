@@ -1,80 +1,78 @@
-# Real-Time Object Detection using YOLOv8
+🚀 Real-Time Object Detection using YOLOv8
 
-This project implements a real-time object detection system using the YOLOv8 deep learning model by Ultralytics. The system is capable of detecting multiple objects in live webcam streams or images with high accuracy.
+This project implements a real-time object detection system using YOLOv8 by Ultralytics.
+The application can detect multiple objects in uploaded images through a deployed Streamlit web app, as well as via local webcam inference.
 
----
+🌐 Live Demo
 
-## 🚀 Features
-- Real-time object detection using webcam
-- Pre-trained YOLOv8 model for fast inference
-- Supports multiple object classes (COCO dataset)
-- Easy to extend with custom datasets
-- Clean and modular Python implementation
+👉 Open the App
 
----
+✨ Features
 
-## 🛠 Technologies Used
-- Python
-- YOLOv8 (Ultralytics)
-- OpenCV
-- PyTorch
+Real-time object detection using YOLOv8
 
----
+Image upload–based detection via Streamlit Web App
 
-## ▶️ How to Run the Project
+Supports multiple object classes (COCO dataset)
 
-### 1️⃣ Install dependencies
-```bash
-pip install ultralytics opencv-python
-2️⃣ Run real-time detection (webcam)
+Fast and accurate inference
+
+Modular and easy-to-extend Python implementation
+
+Ready for custom dataset training
+
+🛠️ Technologies Used
+
+Python
+
+YOLOv8 (Ultralytics)
+
+OpenCV
+
+PyTorch
+
+Streamlit
+
+▶️ How to Run the Project Locally
+1️⃣ Install dependencies
+pip install ultralytics streamlit opencv-python-headless
+
+2️⃣ Run the Streamlit web app
+streamlit run app.py
+
+
+Then open:
+
+http://localhost:8501
+
+3️⃣ Run real-time detection via webcam (CLI)
 yolo predict model=yolov8n.pt source=0
 
-3️⃣ Run detection on an image
+4️⃣ Run detection on an image
 yolo predict model=yolov8n.pt source=example.jpg
 
+📂 Output
 
-Results will be saved in:
+Detection results are automatically saved to:
 
 runs/detect/predict/
 
-📌 Sample Output
+📸 Sample Output
 
-Add screenshots or demo GIF here
+Add screenshots or a demo GIF here showing detected objects.
 
 🔮 Future Improvements
 
 Train YOLOv8 on a custom dataset
 
-Add object counting functionality
+Add object counting
 
-Deploy as a web application using Streamlit
+Support video uploads
 
 Improve inference speed with model optimization
+
+Add class-filtering options in UI
 
 📄 License
 
 MIT License
-
-
----
-
-## ✅ STEP 2: Add Proof (Screenshots or Video)
-
-This is **huge for recruiters**.
-
-### 🔹 Do this
-1. Run YOLO again:
-```bat
-yolo predict model=yolov8n.pt source=0
-
-
-Take a screenshot (bounding boxes visible)
-
-Create a folder in repo:
-
-screenshots/
-
-
-Upload the image to GitHub
-
-Add it under Sample Output in README
