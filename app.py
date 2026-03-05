@@ -1,24 +1,24 @@
-import streamlit as st
-from ultralytics import YOLO
-from PIL import Image
-import numpy as np
 import cv2
+import numpy as np
+import streamlit as st
+from PIL import Image
+
+from ultralytics import YOLO
 
 st.set_page_config(page_title="YOLOv8 Object Detection", layout="centered")
 
 st.title("🔍 YOLOv8 Real-Time Object Detection")
 st.write("Upload an image to detect objects using YOLOv8")
 
+
 @st.cache_resource
 def load_model():
     return YOLO("yolov8n.pt")
 
+
 model = load_model()
 
-uploaded_file = st.file_uploader(
-    "Upload an image",
-    type=["jpg", "jpeg", "png"]
-)
+uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
