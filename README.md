@@ -1,4 +1,5 @@
 # 🚀 Real-Time Object Detection Web Application using YOLOv8
+
 📌 Project Overview
 
 This project is a real-time object detection system built using YOLOv8 (You Only Look Once), a state-of-the-art deep learning model for object detection developed by Ultralytics.
@@ -8,8 +9,8 @@ The application allows users to upload images through a web interface and automa
 This project demonstrates end-to-end machine learning engineering, including model inference, dependency management, cloud deployment, and troubleshooting real-world deployment issues.
 
 # 🌐 Live Demo
-  https://yolov8-real-time-object-detection-ghytfmpxr4kkk2qypagjut.streamlit.app/
 
+https://yolov8-real-time-object-detection-ghytfmpxr4kkk2qypagjut.streamlit.app/
 
 # 🎯 Problem Statement
 
@@ -60,13 +61,14 @@ Final detections are rendered as bounding boxes with class labels.
 YOLOv8 processes the entire image in one pass, enabling real-time performance.
 
 ## 🏗️ Project Architecture
+
 yolov8-real-time-object-detection/
 │
-├── app.py                  # Streamlit web application
-├── runtime.txt             # Python version configuration (Python 3.11)
-├── requirements.txt        # Dependency list for Streamlit deployment
-├── README.md               # Project documentation
-└── runs/                   # YOLO output directory (auto-generated)
+├── app.py # Streamlit web application
+├── runtime.txt # Python version configuration (Python 3.11)
+├── requirements.txt # Dependency list for Streamlit deployment
+├── README.md # Project documentation
+└── runs/ # YOLO output directory (auto-generated)
 
 # ✨ Key Features
 
@@ -83,15 +85,16 @@ yolov8-real-time-object-detection/
 🚀 Cloud-ready deployment
 
 # 🛠️ Technologies Used
-Technology	Purpose
-Python	Core programming language
-YOLOv8 (Ultralytics)	Object detection model
-PyTorch	Deep learning framework
-OpenCV	Image processing
-Streamlit	Web application framework
 
+Technology Purpose
+Python Core programming language
+YOLOv8 (Ultralytics) Object detection model
+PyTorch Deep learning framework
+OpenCV Image processing
+Streamlit Web application framework
 
 # ▶️ Running the Project Locally
+
 1️⃣ Clone the repository
 git clone https://github.com/Saivardhan190/yolov8-real-time-object-detection.git
 cd yolov8-real-time-object-detection
@@ -101,7 +104,6 @@ pip install ultralytics streamlit opencv-python-headless
 
 3️⃣ Run the Streamlit app
 streamlit run app.py
-
 
 Open your browser at:
 
